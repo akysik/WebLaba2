@@ -1,0 +1,161 @@
+
+/* ===== 1. Основні стилі сторінки ===== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ===== 2. Головний заголовок ===== */
+
+h1 {
+    color: #1e3a5f;
+    text-align: center;
+}
+
+/* ===== 3. Заголовки розділів ===== */
+
+h2 {
+    color: #2563eb;
+}
+
+/* ===== 4. Абзаци ===== */
+
+p {
+    line-height: 1.6;
+}
+
+/* ===== 5. Шапка резюме ===== */
+
+header {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* ===== 6. Контактна інформація ===== */
+
+address {
+    font-style: normal;
+    margin-top: 15px;
+}
+
+/* ===== 7. Посилання ===== */
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* ===== 8. Ефект наведення на посилання ===== */
+
+a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+/* ===== 9. Основні розділи резюме ===== */
+
+main section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #2563eb;
+}
+
+/* Заголовки всередині розділів */
+main section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Списки */
+main section ul {
+    padding-left: 25px;
+}
+
+/* Елементи списків */
+main section li {
+    margin-bottom: 8px;
+}
+/* ===== 10. Ефекти наведення ===== */
+
+main section {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+main section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* ===== Адаптивність для мобільних пристроїв ===== */
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    main section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* ===== 11. Блокова модель ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ===== 12. Flexbox для основного макета ===== */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== 13. Селектор класу ===== */
+
+.cv-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* ===== 14. Селектор ID ===== */
+
+#about {
+    scroll-margin-top: 20px;
+}
+
+/* ===== 15. Селектор атрибута ===== */
+
+a[href^="mailto:"] {
+    color: #2563eb;
+    overflow-wrap: anywhere;
+}
+
+/* ===== 16. Другий тип псевдокласу ===== */
+
+a:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 4px;
+}

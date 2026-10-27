@@ -1,30 +1,40 @@
 
 function TechnicalSkills() {
     return (
-        <section id="technical-skills">
-            <h2>Technical Skills</h2>
+        <section
+            id="technical-skills"
+            className="bg-white p-6 rounded-xl shadow-sm mb-5 border-l-4 border-blue-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
+            <h2 className="text-2xl font-bold text-blue-600 mb-5 pb-2 border-b-2 border-blue-600">
+                Technical Skills
+            </h2>
 
-            <ul>
+            <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-relaxed">
                 <li>
                     Programming:
                     <strong> Python, HTML5, основи SQL.</strong>
                 </li>
+
                 <li>
                     Version Control:
                     <strong> Git, GitHub.</strong>
                 </li>
+
                 <li>
                     Development Tools:
                     <strong> Visual Studio Code, PyCharm.</strong>
                 </li>
+
                 <li>
                     Operating Systems:
                     <strong> Windows, Linux.</strong>
                 </li>
+
                 <li>
                     Networking:
                     <strong> Основи TCP/IP, DNS, HTTP.</strong>
                 </li>
+
                 <li>
                     Cybersecurity:
                     <strong>
@@ -32,6 +42,7 @@ function TechnicalSkills() {
                         захист даних та мереж.
                     </strong>
                 </li>
+
                 <li>
                     Office &amp; Productivity:
                     <strong>
