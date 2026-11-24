@@ -3,7 +3,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+    /* Лабораторна №5: змінений фон для перевірки автоматичного деплою */
+    background-color: #dbeafe;
     color: #333;
     margin: 0;
     padding: 20px;

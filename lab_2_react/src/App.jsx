@@ -27,7 +27,7 @@ function App() {
 
     return (
         <div
-            className={`min-h-screen bg-gray-100 dark:bg-slate-900 py-8 px-4 sm:px-6 lg:px-8 transition-colors ${
+            className={`min-h-screen bg-blue-100 dark:bg-slate-900 py-8 px-4 sm:px-6 lg:px-8 transition-colors ${
                 theme === 'dark' ? 'dark' : ''
             }`}
         >
