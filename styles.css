@@ -1,5 +1,5 @@
 
-/* ===== 1. Основні стилі сторінки ===== */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -9,26 +9,26 @@ body {
     padding: 20px;
 }
 
-/* ===== 2. Головний заголовок ===== */
+
 
 h1 {
     color: #1e3a5f;
     text-align: center;
 }
 
-/* ===== 3. Заголовки розділів ===== */
+
 
 h2 {
     color: #2563eb;
 }
 
-/* ===== 4. Абзаци ===== */
+
 
 p {
     line-height: 1.6;
 }
 
-/* ===== 5. Шапка резюме ===== */
+
 
 header {
     background-color: #ffffff;
@@ -37,27 +37,27 @@ header {
     margin-bottom: 20px;
 }
 
-/* ===== 6. Контактна інформація ===== */
+
 
 address {
     font-style: normal;
     margin-top: 15px;
 }
 
-/* ===== 7. Посилання ===== */
+
 
 a {
     color: #2563eb;
     text-decoration: none;
 }
 
-/* ===== 8. Ефект наведення на посилання ===== */
+
 
 a:hover {
     color: #1e40af;
     text-decoration: underline;
 }
-/* ===== 9. Основні розділи резюме ===== */
+
 
 main section {
     background-color: #ffffff;
@@ -66,22 +66,22 @@ main section {
     border-left: 5px solid #2563eb;
 }
 
-/* Заголовки всередині розділів */
+
 main section h2 {
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-/* Списки */
+
 main section ul {
     padding-left: 25px;
 }
 
-/* Елементи списків */
+
 main section li {
     margin-bottom: 8px;
 }
-/* ===== 10. Ефекти наведення ===== */
+
 
 main section {
     transition: transform 0.3s ease,
@@ -92,7 +92,7 @@ main section:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-/* ===== Адаптивність для мобільних пристроїв ===== */
+
 
 @media (max-width: 768px) {
     body {
@@ -119,13 +119,13 @@ main section:hover {
     }
 }
 
-/* ===== 11. Блокова модель ===== */
+
 
 * {
     box-sizing: border-box;
 }
 
-/* ===== 12. Flexbox для основного макета ===== */
+
 
 main {
     display: flex;
@@ -133,29 +133,192 @@ main {
     gap: 20px;
 }
 
-/* ===== 13. Селектор класу ===== */
+
 
 .cv-section {
     background-color: #ffffff;
     border-radius: 10px;
 }
 
-/* ===== 14. Селектор ID ===== */
+
 
 #about {
     scroll-margin-top: 20px;
 }
 
-/* ===== 15. Селектор атрибута ===== */
+
 
 a[href^="mailto:"] {
     color: #2563eb;
     overflow-wrap: anywhere;
 }
 
-/* ===== 16. Другий тип псевдокласу ===== */
+
 
 a:focus-visible {
     outline: 2px solid #2563eb;
     outline-offset: 4px;
+}
+
+
+
+/* ===== Лабораторна №4 ===== */
+
+/* Кнопка перемикання теми */
+#theme-toggle {
+    display: block;
+    margin: 15px auto 0;
+    padding: 8px 18px;
+    border: 2px solid #2563eb;
+    border-radius: 999px;
+    background-color: transparent;
+    color: #2563eb;
+    font: inherit;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* Відгуки */
+.review {
+    margin-bottom: 12px;
+    padding: 12px 16px;
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+    background-color: #f4f6f8;
+}
+
+.review h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.review small {
+    color: #64748b;
+}
+
+.review p {
+    margin: 6px 0 0;
+}
+
+/* Футер з інформацією з localStorage */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 15px 0 5px;
+    font-size: 16px;
+    color: #1e3a5f;
+}
+
+#storage-info {
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* Модальне вікно */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.modal-box label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.modal-box input,
+.modal-box textarea {
+    width: 100%;
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.modal-box button {
+    margin: 15px 8px 0 0;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.modal-box button:hover {
+    background-color: #1e40af;
+}
+
+#modal-close {
+    background-color: #64748b;
+}
+
+/* Нічна тема: клас .dark на <body> */
+body.dark {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark header,
+body.dark main section,
+body.dark footer,
+body.dark .modal-box {
+    background-color: #1e293b;
+}
+
+body.dark h1,
+body.dark footer h3 {
+    color: #bfdbfe;
+}
+
+body.dark h2,
+body.dark a {
+    color: #60a5fa;
+}
+
+body.dark .review {
+    background-color: #334155;
+}
+
+body.dark .review small {
+    color: #cbd5e1;
+}
+
+body.dark .modal-box input,
+body.dark .modal-box textarea {
+    border-color: #475569;
+    background-color: #0f172a;
+    color: #e2e8f0;
 }

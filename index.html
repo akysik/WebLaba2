@@ -36,6 +36,9 @@
                 </li>
             </ul>
         </address>
+
+        <!-- Перемикач денної/нічної теми (лабораторна №4) -->
+        <button id="theme-toggle" type="button">🌙 Нічна тема</button>
     </header>
 
     <main>
@@ -202,15 +205,57 @@
             </ul>
         </section>
 
+        <!-- 7. Відгуки роботодавців (завантажуються з сервера) -->
+        <section id="reviews" class="cv-section">
+            <h2>Reviews</h2>
+            <div id="reviews-list">Завантаження відгуків...</div>
+        </section>
+
     </main>
 
     <footer>
         <p>
             &copy; 2026 Артур Зінчук Вікторович.
             Резюме створено в рамках
-            лабораторної роботи №2.
+            лабораторної роботи №4.
         </p>
+
+        <!-- Вміст localStorage (інформація про ОС та браузер) -->
+        <h3>Інформація про систему (localStorage)</h3>
+        <pre id="storage-info"></pre>
     </footer>
+
+    <!-- Модальне вікно з формою зворотного зв'язку -->
+    <div id="modal" class="modal" hidden>
+        <div class="modal-box">
+            <h2>Зворотний зв'язок</h2>
+
+            <form action="https://formspree.io/f/xdegyabp" method="POST">
+                <label>
+                    Ім'я
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Номер телефону
+                    <input type="tel" name="phone">
+                </label>
+                <label>
+                    Повідомлення
+                    <textarea name="message" rows="4" required></textarea>
+                </label>
+
+                <button type="submit">Надіслати</button>
+                <button type="button" id="modal-close">Закрити</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
